@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ThindiMane app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="hero"> 
+
+    <div class="display-input"> 
+      <div class="title">ThindiMane</div>
+
+         <div class="button-box">
+            <div id="btn"></div>
+               <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+               <button type="button" class="toggle-btn" onclick="register()">Sign up</button>
+         </div>
+
+       <form id="login" class="input-group">
+         <input type="text" class="input-field" id="username" placeholder="User id"required>
+         <input type="text" class="input-field" id="password" placeholder="Password"required>
+         <input type="checkbox" class="check-box"><span>Remember me</span>
+         <button type="button" class="submit-btn" id="submit" onclick="validate()">Login</button>
+       </form>
+     
+       <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User id"required>
+          <input type="email" class="input-field" placeholder="Enter Email"required>
+          <input type="text" class="input-field" placeholder="Enter Password"required>
+          <input type="checkbox" class="check-box"><span>terms & conditions*</span>
+          <button type="submit" class="submit-btn">Login</button>
+       </form>
+
+    </div>
+  </div>
+
+   <script>
+      var x=document.getElementById("login");
+      var y=document.getElementById("register");
+      var z=document.getElementById("btn");
+      function register(){
+         x.style.left="-450px";
+         y.style.left="60px";
+         z.style.left="140px";
+      }
+      function login(){
+         x.style.left="60px";
+         y.style.left="550px";
+         z.style.left="0px";
+      }
+   </script>
+   </div>
+</body>
+</html>
